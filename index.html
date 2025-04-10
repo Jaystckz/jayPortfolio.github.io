@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>jayPortfolio</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src="https://kit.fontawesome.com/9e9a0e14c3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- the navbar -->
+    <nav>
+        <div class="logo">
+             <h1>J<span>ay</span></h1>
+        </div>
+
+        <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fas fa-times" onclick="closemenu()"></i>
+        </ul>
+        <i class="fas fa-bars" onclick="openmenu()"></i>
+    </nav>
+
+    <div id="header" class="header-section">
+        <div class="container">
+            <!-- <nav>
+                <div class="logo">
+                     <h1>J<span>ay</span></h1>
+                </div>
+
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav> -->
+
+            <div class="header-text">
+                <p>Software Developer</p>
+                <h1>Hi, I'm <span>Jay</span> <br> from Nigeria</h1>
+            </div>
+        </div>
+
+        <div class="spline-header-bg">
+            <!---the 3d element for background-->
+       <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.82/build/spline-viewer.js"></script>
+       <spline-viewer class="background" url="https://prod.spline.design/gpxX7wysUKp1mghJ/scene.splinecode"></spline-viewer>
+       </div>
+
+
+        <!-- The 3d background -->
+        <!-- <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.82/build/spline-viewer.js"></script>
+        <spline-viewer class="robot" url="https://prod.spline.design/b6bKVRQ2PJJ6EtLf/scene.splinecode"></spline-viewer> -->
+        
+        <script>
+           const interval = setInterval(() => {
+            const viewer = document.querySelector('spline-viewer');
+            if (viewer && viewer.shadowRoot) {
+                const logo = viewer.shadowRoot.querySelector('#logo');
+                if (logo) {
+                logo.remove(); // 💥 remove the logo element entirely
+                // console.log("Spline logo removed!");
+                clearInterval(interval);
+                }
+            }
+            }, 500);
+        </script>
+
+    </div>   
+
+    <!-- about section -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="cmd.JPG" alt="pics" height="100%">
+                </div>
+
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non aspernatur quaerat inventore dolorem porro, ab ea harum omnis deserunt, aperiam minima quibusdam facilis ut nulla. Suscipit eaque delectus quo consectetur.</p> -->
+                     <p>I'm a Web Developer passionate about creating clean, responsive, and user friendly websites. with strong foundation in <strong>HTML, CSS, JavaScript</strong>, I focus on building seamless digital experiences that blend aesthetics with functionality.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-links" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>HTML 5</span><br>Semantic markup accessibility, and SEO - friendly structure</li>
+                            <li><span>CSS</span><br>Responsive design, Flexbox, Grid, animations, transitions</li>
+                            <li><span>JavaScript</span><br>DOM manipulation, event handling, API integration</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2024 - Current</span><br>Fullstack Web Development Training at NIIT Institute</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2024 - 2025</span><br>Web Development training at NIIT Institute</li>
+                            <li><span>2025</span><br>Bsc </li>
+                            <li><span>2021</span><br>International School University of Lagos</li>
+                        </ul>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- service section -->
+     <div class="services" id="services">
+
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>    
+            <div class="services-list">
+
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Frontend Web Development</h2>
+                    <p>I build responsive and user - friendly websites using HTML, CSS and JavaScript. i ensure the website looks great on all screens and provide smooth user experience</p>
+                    <!-- <a href="#">Learn More</a> -->
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>Web <br> Design</h2> 
+                    <p>I transale designs into functional web pages, ensuring clean layouts, smooth animations, and interactive elements.</p>
+                    <!-- <a href="#">Learn More</a> -->
+                </div>
+
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>Landing Page Development</h2>
+                    <p>I design high converting landing pages tailored for businesses, portfolios and product promotions</p>
+                    <!-- <a href="#">Learn More</a> -->
+                </div>
+            </div>
+        </div>
+     </div>
+
+     <!-- portfolio -->
+      <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+
+            <!-- calculator site -->
+            <div class="work-list">
+                <div class="work">
+                    <img src="calc.jpg" alt="purple">
+                    <div class="layer">
+                        <h3>Calculator</h3>
+                        <p>User friendly basic calculator built with HTML, CSS, and JavaScript. Designed for quick and accurate calculations.it supports basic arithmetic operations(addition, subtraction, multiplication and division) with a clean and responsive interface</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <!-- american football -->
+                <div class="work">
+                    <img src="americanfootball.jpg" class="portfolio-img" alt="purple">
+                    <div class="layer">
+                        <h3>American Football Site</h3>
+                        <p>Live score, real-time stats. and breaking news all in one. Stay in the gme anytime anywhere!</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <!-- clothing site -->
+                <div class="work">
+                    <img src="clothing.jpg" class="portfolio-img" alt="purple">
+                    <div class="layer">
+                        <h3>Clothing Brand Website</h3>
+                        <p>This is a user-friendly website for a streetwear brand, blending bold aesthetics with seamleass shopping for an immersive experience</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- the see more part when the see more button is clicked -->
+             <div class="works-more hidden" id="works-more">
+                
+            <!-- calculator site -->
+            <div class="work-list">
+                <div class="work">
+                    <img src="calc.jpg" alt="purple">
+                    <div class="layer">
+                        <h3>Calculator</h3>
+                        <p>User friendly basic calculator built with HTML, CSS, and JavaScript. Designed for quick and accurate calculations.it supports basic arithmetic operations(addition, subtraction, multiplication and division) with a clean and responsive interface</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <!-- american football -->
+                <div class="work">
+                    <img src="americanfootball.jpg" class="portfolio-img" alt="purple">
+                    <div class="layer">
+                        <h3>American Football Site</h3>
+                        <p>Live score, real-time stats. and breaking news all in one. Stay in the gme anytime anywhere!</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <!-- clothing site -->
+                <div class="work">
+                    <img src="clothing.jpg" class="portfolio-img" alt="purple">
+                    <div class="layer">
+                        <h3>Clothing Brand Website</h3>
+                        <p>This is a user-friendly website for a streetwear brand, blending bold aesthetics with seamleass shopping for an immersive experience</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+             </div>
+            
+
+            <a href="#works-more" class="btn" id="see-more">See more</a>
+            <a href="#portfolio" class="btn hidden" id="see-less">See less</a>
+        </div>
+      </div>
+
+
+      <!-- contact  -->
+       <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> jamiuabolajilanre@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> 09080798987</p>
+
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter-square"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="work in progress.png" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" id="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" id="email" placeholder="Your Email" required>
+                        <textarea name="Message" id="message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+
+                    <span id="msg"></span>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>&copy;2025 JAY PORTFOLIO WEBSITE <i class="fa-solid fa-code"></i></p>
+        </div>
+       </div>
+
+
+
+    <script src="main.js"></script>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        
+        function opentab(tabname) {
+            for(tablink of tablinks) {
+                tablink.classList.remove("active-links")
+            }
+
+            for(tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab")
+            }
+
+            event.currentTarget.classList.add("active-links");
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu() {
+            sidemenu.style.right = "-200px"
+        }
+    </script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxCvs9dDn945AQSM0pnTp0Ra3hzBq2iXy8kkJW9Jjgb4gL8p8bpPgi5k7QBhUEcO6WWiA/exec'
+    const form = document.forms['submit-to-google-sheet']
+
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            }),5000
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>

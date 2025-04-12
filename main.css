@@ -101,6 +101,7 @@ nav {
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
+
 .logo h1 {
     font-size: 30px;
     color: white;
@@ -148,7 +149,7 @@ nav ul li a:hover::after {
 }
 
 .header-text h1 span {
-    color: #ff004f;
+    /* color: #ff004f; */
 }
 
 #about {

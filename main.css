@@ -496,6 +496,7 @@ nav .fas {
         background-position: center;
         background-size: cover;
         height: 100vh; 
+        margin-top: -13vh;
     }
 
     /* .background {
@@ -511,6 +512,20 @@ nav .fas {
 
     .header-text h1 {
         font-size: 40px;
+    }
+
+    .header-text h3 {
+        font-size: 40px;
+        margin-top: 10px;
+    }
+
+    .header-p {
+        font-size: 17px !important;
+        margin-top: 10px;
+    }
+
+    .hire-btn {
+        width: 27vw;
     }
 
     nav .fas {

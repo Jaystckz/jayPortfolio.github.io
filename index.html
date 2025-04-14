@@ -7,12 +7,14 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
     <script src="https://kit.fontawesome.com/9e9a0e14c3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
-    <!-- the navbar -->
+    <!-- navbar -->
     <nav>
         <div class="logo">
-             <h1>J<span>ay</span></h1>
+             <h1>J<span>ay</span></h1> 
+             <!-- data-aos="fade-down" data-aos-duration="600" -->
         </div>
 
         <ul id="sidemenu">
@@ -26,55 +28,40 @@
         <i class="fas fa-bars" onclick="openmenu()"></i>
     </nav>
 
+    <!-- header -->
     <div id="header" class="header-section">
         <div class="container">
-            <!-- <nav>
-                <div class="logo">
-                     <h1>J<span>ay</span></h1>
-                </div>
-
-                <ul id="sidemenu">
-                    <li><a href="#header">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <i class="fas fa-times" onclick="closemenu()"></i>
-                </ul>
-                <i class="fas fa-bars" onclick="openmenu()"></i>
-            </nav> -->
-
             <div class="header-text">
-                <p>Web Developer</p>
-                <h1>Hi, I'm <span>Jay</span> <br> from Nigeria</h1>
+                <!-- <p>Web Developer</p>
+                <h1>Hi, I'm <span>Jamiu</span> <br> from Nigeria</h1> -->
+                <p>Hello, I am</p>
+                <h1>Abolaji Jamiu</h1>
+                <h3>Web Developer</h3>
+                <p class="header-p">I build fast, responsive and user-friendly websites with clean code and modern design.</p>
+                <a href="#contact" class="hire-btn">Hire Me</a>
             </div>
         </div>
 
-        <div class="spline-header-bg">
-            <!---the 3d element for background-->
+        <!---the 3d element for background-->
+        <div class="header-bg">
+       <!-- <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.82/build/spline-viewer.js"></script>
+       <spline-viewer class="background" url="https://prod.spline.design/gpxX7wysUKp1mghJ/scene.splinecode"></spline-viewer> -->
+
        <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.82/build/spline-viewer.js"></script>
-       <spline-viewer class="background" url="https://prod.spline.design/gpxX7wysUKp1mghJ/scene.splinecode"></spline-viewer>
-       </div>
-
-
-        <!-- The 3d background -->
-        <!-- <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.82/build/spline-viewer.js"></script>
-        <spline-viewer class="robot" url="https://prod.spline.design/b6bKVRQ2PJJ6EtLf/scene.splinecode"></spline-viewer> -->
-        
+<spline-viewer url="https://prod.spline.design/OQOn94rocyMA34QN/scene.splinecode"></spline-viewer>
+       </div>    
         <script>
            const interval = setInterval(() => {
             const viewer = document.querySelector('spline-viewer');
             if (viewer && viewer.shadowRoot) {
                 const logo = viewer.shadowRoot.querySelector('#logo');
                 if (logo) {
-                logo.remove(); // 💥 remove the logo element entirely
-                // console.log("Spline logo removed!");
+                logo.remove(); 
                 clearInterval(interval);
                 }
             }
             }, 500);
         </script>
-
     </div>   
 
     <!-- about section -->
@@ -110,13 +97,14 @@
 
                     <div class="tab-contents" id="experience">
                         <ul>
-                            <li><span>2024 - Current</span><br>Fullstack Web Development Training at NIIT Institute</li>
+                            <li><span>2024 - Present</span><br>Fullstack Web Development Training</li>
+                            <li><span>2025 - Present</span><br>Freelance web developer on upwork</li>
                         </ul>
                     </div>
 
                     <div class="tab-contents" id="education">
                         <ul>
-                            <li><span>2024 - 2025</span><br>Web Development training at NIIT Institute</li>
+                            <li><span>2024 - 2025</span><br>Web Development training</li>
                             <li><span>2025</span><br>Bsc </li>
                             <li><span>2021</span><br>International School University of Lagos</li>
                         </ul>
@@ -130,7 +118,6 @@
 
     <!-- service section -->
      <div class="services" id="services">
-
         <div class="container">
             <h1 class="sub-title">My Services</h1>    
             <div class="services-list">
@@ -138,21 +125,21 @@
                 <div>
                     <i class="fa-solid fa-code"></i>
                     <h2>Frontend  Web Development</h2>
-                    <p>I build interactive websites using HTML, CSS and JavaScript ensuring smooth and engaging user experiences, Let me transform your ideas into a stylish, modern website.</p>
+                    <p class="service-p">I build interactive websites using HTML, CSS and JavaScript ensuring smooth and engaging user experiences, Let me transform your ideas into a stylish, modern website.</p>
                     <!-- <a href="#">Learn More</a> -->
                 </div>
 
                 <div>
                     <i class="fa-solid fa-tablet-screen-button"></i>
                     <h2>Responsive Web <br> Design</h2> 
-                    <p>I create responsive websites that adapt seamlessly to all screen sizes, ensuring a smooth user experience on desktops, tablets, and mobile devices. with a focus on clean design and fast performance, I'd make sure your site looks great and functions flawlessly everywhere.</p>
+                    <p class="service-p">I create responsive websites that adapt seamlessly to all screen sizes, ensuring a smooth user experience on desktops, tablets, and mobile devices. with a focus on clean design and fast performance, I'd make sure your site looks great and functions flawlessly everywhere.</p>
                     <!-- <a href="#">Learn More</a> -->
                 </div>
 
                 <div>
                     <i class="fa-solid fa-laptop-code"></i>
                     <h2>Custom Website Development</h2>
-                    <p>I specialize in building custom websites tailored to your unique needs. From design to functionality, I create fully personalized sites that reflect your brand and deliver a seamless user experience.</p>
+                    <p class="service-p">I specialize in building custom websites tailored to your unique needs. From design to functionality, I create fully personalized sites that reflect your brand and deliver a seamless user experience.</p>
                     <!-- <a href="#">Learn More</a> -->
                 </div>
             </div>
@@ -162,7 +149,7 @@
      <!-- portfolio -->
       <div id="portfolio">
         <div class="container">
-            <h1 class="sub-title">My Work</h1>
+            <h1 class="sub-title">My Projects</h1>
 
             <!-- calculator site -->
             <div class="work-list">
@@ -245,11 +232,12 @@
             <div class="row">
                 <div class="contact-left">
                     <h1 class="sub-title">Contact Me</h1>
+                    <p>Get in Touch, and Let's Work Together!</p>
                     <p><i class="fa-solid fa-paper-plane"></i> jamiuabolajilanre@gmail.com</p>
                     <p><i class="fa-solid fa-phone"></i> +2349080798987</p>
 
                     <div class="social-icons">
-                        <a href="#"><i class="fa-solid fa-envelope"></i></a>
+                        <a href="mailto:jamiuabolajilanre@gmail.com"><i class="fa-solid fa-envelope"></i></a>
                         <a href="#"><i class="fa-brands fa-square-x-twitter"></i></a>
                         <a href="#"><i class="fa-brands fa-github"></i></a>
                         <a href="#"><i class="fa-brands fa-linkedin"></i></a>
@@ -306,6 +294,11 @@
         function closemenu() {
             sidemenu.style.right = "-200px"
         }
+    </script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+    AOS.init();
     </script>
 
 <script>

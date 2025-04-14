@@ -19,17 +19,6 @@ body {
     color: white;
 }
 
-.robot {
-    position: absolute;
-    top: 0;
-    /* width: 100%; */
-    /* height: 100%; */
-    right: -17%;
-    /* z-index: 0; */
-    scale: 0.65;
-}
-
-/* the 3d background */
 .header-section {
     position: relative;
     height: 100vh;
@@ -37,14 +26,13 @@ body {
     color: white;
 }
 
-.spline-header-bg {
+.header-bg {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     z-index: 1;
-    /* pointer-events: none; */
 }
 
 .background {
@@ -60,13 +48,28 @@ body {
     z-index: 2;
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
-    /* align-items: center; */
     height: 100%;
-    /* text-align: center; */
     padding: 0 20px;
     pointer-events: none;
     margin-left: -20px;
+    line-height: 1.2;
+}
+
+.header-text p {
+    font-size: 20px;
+}
+
+.header-text h1 {
+    font-size: 30px !important;
+    /* color: #82E600; */
+}
+
+.header-text h3 {
+    font-size: 50px;
+}
+
+.header-p {
+    font-size: 16px;
 }
 
 #header {
@@ -94,8 +97,6 @@ nav {
     top: 0;
     left: 0;
     background-color: black;
-    /* background: url("Backlight\ BG\ effect@1-1366x641.jpg"); */
-    /* background-size: cover; */
     width: 100%;
     z-index: 1000;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
@@ -108,7 +109,8 @@ nav {
 }
 
 .logo h1 span {
-    color: #ff004f;
+    /* color: #ff004f; */
+    color: #82E600;
 }
 
 nav ul li {
@@ -127,7 +129,8 @@ nav ul li a::after {
     content: '';
     width: 0;
     height: 3px;
-    background-color: #ff004f;
+    /* background-color: #ff004f; */
+    background-color: #82E600;
     position: absolute;
     left: 0;
     bottom: -6px;
@@ -138,11 +141,6 @@ nav ul li a:hover::after {
     width: 100%;
 }
 
-/* .header-text {
-    margin-top: 20%;
-    font-size: 30px;
-} */
-
 .header-text h1 {
     font-size: 60px;
     margin-top: 20px;
@@ -150,8 +148,23 @@ nav ul li a:hover::after {
 
 .header-text h1 span {
     /* color: #ff004f; */
+    color: #82E600;
 }
 
+.hire-btn {
+    pointer-events: visible;
+    width: 8vw;
+    background-color: white;
+    /* color: red; */
+    color: #82E600;
+    text-decoration: none;
+    font-size: 25px;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+/* about */
 #about {
     padding: 80px 0;
     color: #ababab;
@@ -163,8 +176,6 @@ nav ul li a:hover::after {
     flex-wrap: wrap;
 }
 
-
-/* about section */
 .about-col-1 {
     flex-basis: 35%;
 }
@@ -179,7 +190,7 @@ nav ul li a:hover::after {
 }
 
 .sub-title {
-    font-size: 60px;
+    font-size: 50px;
     font-weight: 600px;
     color: white;
 }
@@ -201,7 +212,8 @@ nav ul li a:hover::after {
     content: '';
     width: 0;
     height: 3px;
-    background: #ff004f;
+    /* background: #ff004f; */
+    background-color: #82E600;
     position: absolute;
     left: 0;
     bottom: -8px;
@@ -218,7 +230,8 @@ nav ul li a:hover::after {
 }
 
 .tab-contents ul li span {
-    color: #b54769;
+    /* color: #b54769; */
+    color: #47b58e;
     font-size: 14px;
 }
 
@@ -276,8 +289,13 @@ nav ul li a:hover::after {
 }
 
 .services-list div:hover {
-    background-color: #ff004f;
+    /* background-color: #ff004f; */
+    background-color: #82E600;
     transform: translateY(-10px);
+}
+
+.service-p {
+    font-size: 14px;
 }
 
 /* portfolio */
@@ -309,7 +327,7 @@ nav ul li a:hover::after {
 .layer {
     width: 100%;
     height: 0;
-    background: linear-gradient(rgba(0,0,0,0.6), #ff004f);
+    background: linear-gradient(rgba(0,0,0,0.6), #82E600); 
     border-radius: 10px;
     position: absolute;
     left: 0;
@@ -332,7 +350,8 @@ nav ul li a:hover::after {
 
 .layer a {
     margin-top: 20px;
-    color: #ff004f;
+    /* color: #ff004f; */
+    color: #82E600;
     text-decoration: none;
     font-size: 18px;
     line-height: 60px;
@@ -355,7 +374,7 @@ nav ul li a:hover::after {
     display: block;
     margin: 50px auto;
     width: fit-content;
-    border: 1px solid #ff004f;
+    border: 1px solid #82E600;
     padding: 14px 50px;
     border-radius: 6px;
     text-decoration: none;
@@ -364,7 +383,8 @@ nav ul li a:hover::after {
 }
 
 .btn:hover {
-    background-color: #ff004f;
+    /* background-color: #ff004f; */
+    background-color: #82E600;
 
 }
 
@@ -382,7 +402,8 @@ nav ul li a:hover::after {
 }
 
 .contact-left p i {
-    color: #ff004f;
+    /* color: #ff004f; */
+    color: #82E600;
     margin-right: 15px;
     font-size: 25px;
 }
@@ -401,13 +422,15 @@ nav ul li a:hover::after {
 }
 
 .social-icons a:hover{
-    color: #ff004f;
+    /* color: #ff004f; */
+    color: #82E600;
     transform: translateY(-5px);
 }
 
 .btn.btn2 {
     display: inline-block;
-    background: #ff004f;
+    /* background: #ff004f; */
+    background-color: #82E600;
 }
 
 .contact-right form {
@@ -447,7 +470,8 @@ form .btn2 {
 }
 
 .copyright i {
-    color: #ff004f;
+    /* color: #ff004f; */
+    color: #82E600;
 }
 
 nav .fas {
